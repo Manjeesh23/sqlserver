@@ -6,6 +6,7 @@ scheduler:
 pods:
   sql1:
     count: {{NODE_COUNT}}
+    image: {{SQLCLUSTER_IMAGE}}
     placement: '{{{NODE_PLACEMENT}}}'
     {{#ENABLE_VIRTUAL_NETWORK}}
     networks:
